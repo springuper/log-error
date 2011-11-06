@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<title>log error</title>
+</head>
+<body>
+<form action="address" method="post" id="address-form">
+    <!-- the name is misspelled, so it may cause an error -->
+    <input type="text" name="adress" />
+    <input type="submit" value="Submit" />
+</form>
+<h3>Error logs</h3>
+<div id="error-log"></div>
+<script type="text/javascript" src="base.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<script>
+M.runMethod(function() {
+    M.app.editAddress();
+});
+</script>
+<script>
+</script>
+</body>
+</html>
